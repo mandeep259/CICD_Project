@@ -1,5 +1,10 @@
 #!/bin/sh
-while true; do
-  echo "CI/CD pipeline running - $(date)"
-  sleep 5
-done
+echo "===================================="
+echo "MyApp container started successfully"
+echo "Build Time: $(date)"
+echo "Hostname: $(hostname)"
+echo "===================================="
+
+# Keep container running
+tail -f /dev/null
+
